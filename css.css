@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    background: #e2e1e1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: white;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    /* chú ý */
+}
+
+.text-align {
+    text-align: center;
+}
+
+.col-right {
+    text-align: right;
+}
+
+.row input[type="radio"] {
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+.col-2 {
+    width: 16.666%;
+    margin: 0 15px;
+}
+
+.col-3 {
+    width: 25%;
+    margin: 0 15px;
+}
+
+.col-4 {
+    width: 33.333%;
+    margin: 0 15px;
+}
+
+.col-6 {
+    width: 50%;
+    margin: 0 15px;
+}
+
+.col-7 {
+    width: 58, 331%;
+    margin: 0 15px;
+}
+
+.col-8 {
+    width: 66.6667%;
+    margin: 0 15px;
+}
+
+.col-9 {
+    width: 75%;
+    margin: 0 15px;
+}
+
+.col-12 {
+    width: 100%;
+    margin: 0 15px;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav__item {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.nav__item--active {
+    color: blue;
+}
+
+.logo,
+.nav {
+    vertical-align: middle;
+}
+
+.mini-card {
+    padding-right: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.mini-card:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    top: 35%;
+    right: 0;
+    background: #000;
+}
+
+.mini-card,
+.btn {
+    display: inline-block;
+}
+
+.mini-card__icon {
+    background: turquoise;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mini-card__icon,
+.mini-card__info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn {
+    border: none;
+    background: #3a85f5;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.btn-blue {
+    background: rgb(7, 66, 155);
+}
+
+.page-content {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.section__content {
+    background: white;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 20px;
+}
+
+.attribute-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-price--reduction {
+    color: red;
+    font-weight: bold;
+}
+
+.product-price {
+    padding-top: 40px;
+}
+
+.product-price--cost {
+    text-decoration: line-through;
+}
+
+.product-quantity {
+    padding-top: 30px;
+}
+
+.form-input {
+    border: 1px solid #e2e1e1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.alert {
+    text-align: center;
+    font-size: 17px;
+}
+
+.card-body {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-top: 1px #e2e1e1 dashed;
+    border-bottom: 1px #e2e1e1 dashed;
+}
+
+.margin {
+    margin-top: 10px;
+}
+
+.alert-denger {
+    background: #e2e1e1;
+    padding: 5px 0px;
+}
+
+.expriration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expriration__span {
+    padding: 10px
+}
+
+.margin-minus {
+    margin: 0px 0px;
+}
+
+.margin-minus-right {
+    margin-right: 0px;
+}
+
+.input_padding {
+    padding: 10px;
+    background: #e4e0e0;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+
+/* checkbox */
+
+.order,
+.payment,
+.delivery {
+    display: none;
+}
+
+.check {
+    position: relative;
+    left: 40%;
+}
+
+#order:checked~.order {
+    display: block;
+}
+
+#payment:checked~.payment {
+    display: block;
+}
+
+#delivery:checked~.delivery {
+    display: block;
+}
+
+.cart-hover section {
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    right: -220px;
+    display: none;
+}
+
+.mini-card:hover .cart-hover section {
+    display: block;
+}
